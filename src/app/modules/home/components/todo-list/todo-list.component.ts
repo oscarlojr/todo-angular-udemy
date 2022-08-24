@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todo-list.component.scss']
 })
 export class TodoListComponent implements OnInit {
-
+  public taskList: Array<{ task: string; checked: boolean; }> = [];
   constructor() { }
 
   ngOnInit(): void {
