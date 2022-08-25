@@ -20,4 +20,10 @@ export class TodoListComponent implements OnInit {
     this.taskList.splice(event,1);
   }
 
+  public deleteAllTaskList(){
+    const confirm = window.confirm("Essa ação irá deletar toda a lista, deseja continuar?");
+    if(confirm){
+      this.taskList = [];
+    }
+  }
 } 
